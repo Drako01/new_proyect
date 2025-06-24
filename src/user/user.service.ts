@@ -16,7 +16,7 @@ export class UserService {
     return createdUser.save();
   }
 
-  async findOne(username: String) {
+  async findOne(username: string) {
     return this.userModel.findOne({ username });
   }
 }
